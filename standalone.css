@@ -1,0 +1,79 @@
+body
+{
+	margin: 1em auto 3em auto;
+	width: 53%;
+	font-family: "SBL Greek", "Times New Roman", Serif;
+}
+#header {
+	text-align: center;
+}
+pre,code{
+	font-family: "SBL Greek", "Times New Roman", Serif;
+}
+table
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	background: #fff;
+	margin: 0 auto 20px auto;
+	border-collapse: collapse;
+	text-align: left;
+}
+th
+{
+	font-size: 14px;
+	font-weight: normal;
+	color: #039;
+	padding: 10px 8px;
+	border-bottom: 2px solid #6678b1;
+}
+td
+{
+	border-bottom: 1px solid #ccc;
+	color: #669;
+	padding: 6px 8px;
+}
+
+/*
+http://coding.smashingmagazine.com/2013/03/08/tips-tricks-print-style-sheets/
+
+See also:
+http://www.webdesignerdepot.com/2010/01/10-tips-for-better-print-style-sheets/
+http://alistapart.com/article/goingtoprint/
+*/
+@media print {
+	body {
+		color: #000;
+		background: #fff;
+		margin: 0;
+		width: 100%;
+	}
+	h2, h3 {
+		page-break-after: avoid;
+	}
+	@page {
+		margin: 2cm;
+	}
+	img {
+		max-width: 100% !important;
+	}
+	ul, img {
+		page-break-inside: avoid;
+	}
+	a {
+		font-weight: bolder;
+		text-decoration: none;
+	}
+
+	a[href^=http]:after {
+		content:" <" attr(href) "> ";
+	}
+
+	a[href^="#"]:after {
+		content: "";
+	}
+
+	$a:after > img {
+		content: "";
+	}
+}
