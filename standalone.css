@@ -63,6 +63,7 @@ http://alistapart.com/article/goingtoprint/
 	a {
 		font-weight: bolder;
 		text-decoration: none;
+		color: #000;
 	}
 
 	a[href^=http]:after {
@@ -79,7 +80,6 @@ http://alistapart.com/article/goingtoprint/
 
 	a.bibly_reference {
 		font-weight: normal;
-		color: #000;
 	}
 	
 	a.bibly_reference:after {
