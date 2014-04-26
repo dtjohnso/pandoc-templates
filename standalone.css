@@ -76,4 +76,13 @@ http://alistapart.com/article/goingtoprint/
 	$a:after > img {
 		content: "";
 	}
+
+	a.bibly_reference {
+		font-weight: normal;
+		color: #000;
+	}
+	
+	a.bibly_reference:after {
+		content: "";
+	}
 }
