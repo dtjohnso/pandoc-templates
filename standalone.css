@@ -78,11 +78,19 @@ http://alistapart.com/article/goingtoprint/
 		content: "";
 	}
 
-	a.bibly_reference a.rtBibleRef {
+	a.bibly_reference {
 		font-weight: normal;
 	}
 	
-	a.bibly_reference:after a.rtBibleRef:after {
+	a.rtBibleRef {
+		font-weight: normal;
+	}
+	
+	a.bibly_reference:after {
+		content: "";
+	}
+
+	a.rtBibleRef:after {
 		content: "";
 	}
 }
