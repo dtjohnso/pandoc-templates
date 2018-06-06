@@ -1,18 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 body
 {
 	margin: 1em auto 3em auto;
 	width: 53%;
-	font-family: "SBL Greek", "Times New Roman", Serif;
+	/*font-family: "SBL Greek", "Times New Roman", Serif;*/
+	font-family: "Open Sans",  Sans-Serif;
 }
 #header {
 	text-align: center;
 }
 pre,code{
-	font-family: "SBL Greek", "Times New Roman", Serif;
+	/*font-family: "SBL Greek", "Times New Roman", Serif;*/
 }
 table
 {
-	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	/*font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;*/
 	font-size: 12px;
 	background: #fff;
 	margin: 0 auto 20px auto;
